@@ -47,8 +47,17 @@ class App {
             System.out.println("Второе слово: " + str.substring(firstSpace+1,secondSpace));
         }
         // второй способ решения
-        for (String str2 : str.split(" ")) {
-            System.out.println(str2);
+        System.out.println("Второй способ решения:");
+        String[] arrWords = str.split(" ");
+        if(arrWords.length > 1 && arrWords[1] != null) {
+            System.out.println("Второе слово: " + arrWords[1]);
+        }else {
+            System.out.println("Нет второго слова");
         }
+       
     }
 }
+
+ /* for (String str2 : str.split(" ")) {
+            System.out.println(str2);
+        } */
